@@ -4,7 +4,4 @@ on: [push]
 
 jobs:
   print-test:
-    runs-on: ubuntu-latest
-    steps:
-    - name: reuse shared action
-      uses: ./.github/workflows/shared-action.yml
+    uses: ./.github/workflows/shared-action.yml
