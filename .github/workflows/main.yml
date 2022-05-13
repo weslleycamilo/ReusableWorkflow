@@ -1,5 +1,7 @@
 name:  Test reusableworkflow
 
+on: [push]
+
 jobs:
   print-test:
     runs-on: ubuntu-latest
