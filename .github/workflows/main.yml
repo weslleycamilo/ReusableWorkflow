@@ -1,0 +1,8 @@
+name:  Test reusableworkflow
+
+jobs:
+  print-test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: reuse shared action
+      uses: ./.github/workflows/shared-action.yml
