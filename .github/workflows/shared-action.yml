@@ -3,9 +3,7 @@ name: Testing reusable workflow
 on:
   workflow_call:
   
-jobs:
-  print:
-    runs-on: ubuntu-latest
-
-    steps:      
-      - run: echo "🎉  Hello from shared workflow."
+runs:
+  using: "composite"
+  steps:      
+    - run: echo "🎉  Hello from shared workflow."
