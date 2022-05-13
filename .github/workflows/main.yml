@@ -4,4 +4,8 @@ on: [push]
 
 jobs:
   print-test:
-    uses: ./.github/workflows/shared-action.yml
+    runs-on: ubuntu-latest
+    steps:    
+    - uses: ./.github/workflows/shared-action.yml
+    - name: Check out repository code
+      uses: actions/checkout@v3
